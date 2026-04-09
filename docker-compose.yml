@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:15
+    container_name: logimigrate_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: LgTh2019@@
+      POSTGRES_DB: logimigrate_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    container_name: logimigrate_api
+    depends_on:
+      - db
+    ports:
+      - "5000:5000"
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: LgTh2019@@
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: logimigrate_db
+
+volumes:
+  postgres_data:
