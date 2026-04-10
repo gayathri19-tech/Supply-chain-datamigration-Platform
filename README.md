@@ -129,6 +129,25 @@ The project integrates with Power BI to generate business insights such as:
 * Demand forecasting trends
 * Inventory distribution by category
 
+## 📊 Live Dashboard
+
+You can view the interactive Power BI dashboard here:
+
+🔗 [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMTE2NzE4YWMtZjdkZC00NTFmLTk5NjYtYjU0MTgxZDgxZDZhIiwidCI6IjBmMDE2NWEwLWRmOGYtNDIxYS04NWY0LTQzMzk4NzU5MThjYSJ9)
+
+---
+
+## 📸 Dashboard Preview
+
+### Overview
+
+![Overview](images/dashboard_overview.png)
+
+### Insights
+
+![Insights](images/dashboard_insights.png)
+
+
 ---
 
 ## 🔄 Data Loading
